@@ -1,5 +1,4 @@
-let toNextStep = function (previousStepButtonId, previousStepBlockId, nextStepBlockId) {
-    this.previousStepButtonId = previousStepButtonId;
+let toNextStep = function (previousStepBlockId, nextStepBlockId) {
     this.previousStepBlockId = previousStepBlockId;
     this.nextStepBlockId = nextStepBlockId;
 
@@ -16,8 +15,7 @@ let toNextStep = function (previousStepButtonId, previousStepBlockId, nextStepBl
     this.nextStepBlockDisplayBlock();
 }
 
-let toPreviousStep = function (currentStepButtonId, currentStepBlockId, previousStepBlockId) {
-    this.currentStepButtonId = currentStepButtonId;
+let toPreviousStep = function (currentStepBlockId, previousStepBlockId) {
     this.currentStepBlockId = currentStepBlockId;
     this.previousStepBlockId = previousStepBlockId;
 
@@ -34,10 +32,10 @@ let toPreviousStep = function (currentStepButtonId, currentStepBlockId, previous
     this.previousStepBlockDisplayBlock();
 }
 
-// toNextStep('next-button-step-first', 'modal-content-step-first', 'modal-content-step-second'); -> to second step
+// toNextStep('modal-content-step-first', 'modal-content-step-second'); -> to second step
 
-// toNextStep('next-button-step-second', 'modal-content-step-second', 'modal-content-step-third'); -> to third step
+// toNextStep('modal-content-step-second', 'modal-content-step-third'); -> to third step
 
-// toPreviousStep('previous-button-step-third', 'modal-content-step-third', 'modal-content-step-second'); -> back to second step
+// toPreviousStep('modal-content-step-third', 'modal-content-step-second'); -> back to second step
 
-// toPreviousStep('previous-button-step-second', 'modal-content-step-second', 'modal-content-step-first'); -> back to first step 
+// toPreviousStep('modal-content-step-second', 'modal-content-step-first'); -> back to first step
