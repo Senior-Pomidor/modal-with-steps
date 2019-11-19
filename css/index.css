@@ -1,8 +1,8 @@
-.modal-content-step-first {
+.modal-content-step-third {
     display: none;
 }
 
-.modal-content-step-third {
+.modal-content-step-second {
     display: none;
 }
 
@@ -32,7 +32,7 @@
 
 
 .modal-content {
-    height: 65%;
+    height: 69%;
     background-color: #f2f3f8;
 }
 
@@ -48,20 +48,77 @@
 
 
 .modal-body {
+    flex-direction: column;
     overflow-y: scroll;
     background-color: #fff;
     background-clip: content-box;
+    font-size: 20px;
 }
 
 .btn {
     padding: 0.85rem 3.5rem;
     border-radius: 60px;
     font-size: 15px;
+    outline: none;
 }
 
-.next-button-step-first {
+.modal-footer > btn{
+    pointer-events: none;
+}
+
+.btn-copy {
+    padding: 0.2rem 1rem;
+    border-radius: 60px;
+    font-size: 15px;
+    outline: none;
+    margin-left: 15px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+}
+
+.btn--alert {
     background-color: #ff3b3b;
     color: #fefefe;
+}
+
+
+.bottom-header {
+    background-color: #fff;
+    border-color: #fff;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1.25rem 2.5rem;
+    border-bottom: 1px solid #ebedf2;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+    font-size: 25px;
+}
+
+.heading, .pay-address {
+    font-weight: 500;
+}
+
+.heading:not(:first-child) {
+    display: inline-flex;
+    margin-top: 15px;
+}
+
+.modal-body-inner {
+    padding: 20px;
+}
+
+.modal-body-inner > input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 2px solid #eee;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
 
 
