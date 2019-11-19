@@ -17,7 +17,7 @@
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-      <div class="modal-dialog" role="document">
+      <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content modal-content-step-first" id="modal-content-step-first">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
@@ -26,14 +26,16 @@
             </button>
           </div>
           <div class="modal-body">
-                Способ оплаты
+            <div class="accordion-wrapper">
+                <h5 class="accordion-title">Способ оплаты</h5>
                 <button class="accordion">Accordion</button>
-                <div class="panel">
+                <div class="panel flex">
                   <div class="option" data-value="option-1">option-1</div>
                   <div class="option" data-value="option-2">option-2</div>
                   <div class="option" data-value="option-3">option-3</div>
                   <div class="option" data-value="option-4">option-4</div>
                 </div>
+              </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn next-button-step-first" id="next-button-step-first">Next</button>

@@ -1,31 +1,107 @@
 /* Style the buttons that are used to open and close the accordion panel */
-.accordion, .option  {
-    background-color: #eee;
+.accordion {
+    width: 95%;
+    border-radius: 46px;
+    background-color: #f2f3f8;
     color: #444;
     cursor: pointer;
-    padding: 18px;
-    width: 100%;
+    height: 46px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 1.3rem;
     text-align: left;
     border: none;
     outline: none;
-    transition: 0.4s;
-    font-family: Arial, sans-serif;
-    font-size: 11px;
+    -webkit-transition: .4s;
+    transition: .4s;
+    font-size: 20px;
+}
+
+.accordion-title {
+    font-weight: 400;
+    font-size: 1.7rem;
+    color: #48465b;
+    padding-top: 1.5rem;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover, .option:hover {
     background-color: #ccc;
+    outline: none;
 }
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-    padding: 0 18px 0 0;
-    background-color: white;
+    padding: 0;
     display: none;
+    flex-direction: column;
     overflow: hidden;
+    width: 90%;
+    margin-top: 5px;
+    font-size: 15px;
+    background-color: transparent;
+    color: #444;
+    text-align: left;
 }
 
 .option {
+    border-radius: 46px;
+    background-color: transparent;
+    color: #000;
+    cursor: pointer;
+    height: 46px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    -webkit-transition: .4s;
+    transition: .4s;
+    font-size: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   padding: 9px 18px;
+  border: 1px solid #e5e5e5;
+  margin-bottom: 5px;
+}
+
+.option:hover {
+    background-color: #ff0202ad;
+}
+
+.accordion::-moz-placeholder {
+    color: #000000;
+    opacity: 0.5;
+}
+
+.accordion:-ms-input-placeholder {
+    color: #000000;
+    opacity: 0.5;
+}
+
+.accordion::-webkit-input-placeholder {
+    color: #000000;
+    opacity: 0.5;
+}
+
+.accordion-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
 }
