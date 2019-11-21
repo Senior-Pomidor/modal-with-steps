@@ -7,8 +7,7 @@
     cursor: pointer;
     height: 46px;
     padding-left: 2rem;
-    padding-right: 2rem;
-    margin-top: 1.3rem;
+    padding-right: 2rem; 
     text-align: left;
     border: none;
     outline: none;
@@ -32,16 +31,23 @@
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-    padding: 0;
+    position: absolute;
+    top: 50px;
     display: none;
     flex-direction: column;
     overflow: hidden;
     width: 90%;
     margin-top: 5px;
     font-size: 15px;
-    background-color: transparent;
     color: #444;
     text-align: left;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
 }
 
 .option {
@@ -90,6 +96,8 @@
 }
 
 .accordion-wrapper {
+    
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -113,24 +121,13 @@
 
 
 .--third {
-    position: relative;
-    padding: 0 10px;
 }
 
 .--third .accordion {
-    margin-top: 0;
 }
 
 .--third .panel{
-    position: absolute;
-    top: 70px;
-    padding: 10px;
-    background-color: #eee;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
+
 }
 
 .--third .option {
