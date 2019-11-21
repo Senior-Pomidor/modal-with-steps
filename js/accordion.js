@@ -20,21 +20,26 @@ for (i = 0; i < acc.length; i++) {
 
 
 
-var options = document.getElementsByClassName("option");
-let panel = document.querySelector('.panel');
+// var options = document.querySelectorAll(".option");
 
 // options[i].addEventListener('click', function() {
 //   panel.classList.toggle('flex');
 // })
+let panels = document.querySelectorAll('.panel');
 
-for (var o = 0; o < options.length; o++) {
-  options[o].addEventListener('click', function (e) {
-    this.parentElement.previousElementSibling.innerHTML = this.dataset.value;
-    if (panel.style.display === "flex") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "flex";
-    }
-    /* alert(e.target.dataset.value);  */
-  })
+for (let l = 0; l<panels.length; l++) {
+  let panel = panels[l];
+  let options = panel.children;
+  for (let o = 0; o < options.length; o++) {
+    options[o].addEventListener('click', function (e) {
+      this.parentElement.previousElementSibling.innerHTML = this.dataset.value;
+      if (panel.style.display === "flex") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "flex";
+      }
+      /* alert(e.target.dataset.value);  */
+    })
+  }
 }
+

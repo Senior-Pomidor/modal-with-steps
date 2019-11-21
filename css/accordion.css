@@ -104,4 +104,40 @@
     -ms-flex-direction: column;
     flex-direction: column;
     background-color: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+.--third {
+    position: relative;
+    padding: 0 10px;
+}
+
+.--third .accordion {
+    margin-top: 0;
+}
+
+.--third .panel{
+    position: absolute;
+    top: 70px;
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.--third .option {
+    background-color: #fff;
+}
+
+.modal-body > .heading {
+    display: inline-flex;
+    padding: 10px 0 10px 20px;
 }

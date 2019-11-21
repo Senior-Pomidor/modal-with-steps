@@ -25,6 +25,7 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
+          
           <div class="modal-body">
             <div class="accordion-wrapper">
                 <h5 class="accordion-title">Способ оплаты</h5>
@@ -39,6 +40,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn--alert" id="next-button-step-first">Next</button>
+          </div>
           </div>
         </div>
 
@@ -82,9 +84,27 @@
             </button>
           </div>
           <div class="modal-body">
-                Step third
+            <span class="heading">Выберите валюту:</span> <br/>
+            <div class="accordion-wrapper --third">
+                <button class="accordion">Accordion</button>
+                <div class="panel flex">
+                  <div class="option" data-value="option-1">option-1</div>
+                  <div class="option" data-value="option-2">option-2</div>
+                  <div class="option" data-value="option-3">option-3</div>
+                  <div class="option" data-value="option-4">option-4</div>
+                </div>
+            </div>
+            <div class="modal-body-inner">
+              <label  for="amount" class="heading">Amount:</label> <br/>
+              <input type="text" id="amount" name="amount" placeholder="Enter amount"><br/>
+              <label for="addres" class="heading">Addres:</label><br/>
+              <input type="text" id="addres" name="addres" placeholder="Enter your wallet addres"><br/>
+              <label for="tag" class="heading">TAG: </label><br/>
+              <input type="text" id="tag" name="tag" placeholder="Enter TAG">
+            </div>
           </div>
           <div class="modal-footer">
+            <button type="button" class="btn btn--alert" id="next-button-step-first">Next</button>
           </div>
         </div>
       </div>
