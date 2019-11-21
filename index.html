@@ -1,119 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/accordion.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/index.css">d
+	<link rel="stylesheet" href="css/accordion.css">
 </head>
+
 <body>
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-      Launch demo modal
-    </button>
+	<!-- Button trigger modal -->
+	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+		Launch demo modal
+	</button>
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content modal-content-step-first" id="modal-content-step-first">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          
-          <div class="modal-body">
-            <div class="accordion-wrapper">
-                <h5 class="accordion-title">Способ оплаты</h5>
-                <button class="accordion">Accordion</button>
-                <div class="panel flex">
-                  <div class="option" data-value="option-1">option-1</div>
-                  <div class="option" data-value="option-2">option-2</div>
-                  <div class="option" data-value="option-3">option-3</div>
-                  <div class="option" data-value="option-4">option-4</div>
-                </div>
-              </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn--alert" id="next-button-step-first">Next</button>
-          </div>
-          </div>
-        </div>
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
 
 
-        <div class="modal-content modal-content-step-second" id="modal-content-step-second">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
+			<div class="modal-content modal-content-step-first" id="modal-content-step-first">
 
-          <div class="modal-body">
-                <div class="modal-body-inner">
-                <div class="bottom-header">
-                  <span>Alala 300$ lorem</span>
-                  <span>Amount 500$</span>
-                </div>
-                  <span class="heading">Amount:</span> <br/>
-                  2.02265116ETH<br/>
-                  <span class="heading">Addres ETH:</span><br/>
-                  <span class="pay-address">5019929ds24x84xg4xbsb626</span><button class="btn-copy btn--alert">copy</button><br/>
-                  <span class="heading">TAG:</span> <br/>
-                  <label for="txid" class="heading">TXID: </label><br/>
-                  <input type="text" id="txid" name="txid" placeholder="Enter TXID transaction">
-                </div>
-          </div>
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
 
-          <div class="modal-footer">
-            <button type="button" class="btn " data-dismiss="modal">Back</button>
-            <button type="button" class="btn btn--alert" id="next-button-step-second">Next</button>
-          </div>
-        </div>
+				<div class="modal-body">
+						<div class="steps mt-3 mb-3">
+								<span class="dot-active"></span>
+								<span class="dot-non-active"></span>
+								<span class="dot-non-active"></span>
+							</div>
+					<div class="modal-body-inner">
+
+						<div class="modal-body-content">
+							<h5 class="accordion-title">Способ оплаты</h5>
+							<div class="accordion-wrapper">
+								<button class="accordion">Accordion</button>
+								<div class="panel flex">
+									<div class="option" data-value="option-1">option-1</div>
+									<div class="option" data-value="option-2">option-2</div>
+									<div class="option" data-value="option-3">option-3</div>
+									<div class="option" data-value="option-4">option-4</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="modal-footer">
+								<img src="./logo_pay.png" alt="logo-pay" class="logo-pay">
+							<button type="button" class="btn btn--alert" id="next-button-step-first">Next</button>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
 
 
-        <div class="modal-content modal-content-step-third" id="modal-content-step-third">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <span class="heading">Выберите валюту:</span> <br/>
-            <div class="accordion-wrapper --third">
-                <button class="accordion">Accordion</button>
-                <div class="panel flex">
-                  <div class="option" data-value="option-1">option-1</div>
-                  <div class="option" data-value="option-2">option-2</div>
-                  <div class="option" data-value="option-3">option-3</div>
-                  <div class="option" data-value="option-4">option-4</div>
-                </div>
-            </div>
-            <div class="modal-body-inner">
-              <label  for="amount" class="heading">Amount:</label> <br/>
-              <input type="text" id="amount" name="amount" placeholder="Enter amount"><br/>
-              <label for="addres" class="heading">Addres:</label><br/>
-              <input type="text" id="addres" name="addres" placeholder="Enter your wallet addres"><br/>
-              <label for="tag" class="heading">TAG: </label><br/>
-              <input type="text" id="tag" name="tag" placeholder="Enter TAG">
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn--alert" id="next-button-step-first">Next</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="js/index.js"></script>
-    <script src="js/accordion.js"></script>
+
+			<div class="modal-content modal-content-step-second" id="modal-content-step-second">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+
+				<div class="modal-body">
+						<div class="steps mt-3 mb-3">
+								<span class="dot-non-active"></span>
+								<span class="dot-active"></span>
+								<span class="dot-non-active"></span>
+							</div>
+					<div class="modal-body-inner">
+							<div class="bottom-header">
+								<span>Alala 300$ lorem</span>
+								<span>Amount 500$</span>
+							</div>
+						<div class="modal-body-content">
+
+							<span class="heading">Amount:</span> <br/>
+							2.02265116ETH<br/>
+							<span class="heading">Addres ETH:</span><br/>
+							<span class="pay-address">5019929ds24x84xg4xbsb626</span><button class="btn-copy btn--alert">copy</button><br/>
+							<span class="heading">TAG:</span> <br/>
+							<label for="txid" class="heading">TXID: </label><br/>
+							<input type="text" id="txid" name="txid" placeholder="Enter TXID transaction">
+
+						</div>
+
+						<div class="modal-footer">
+							<img src="./logo_pay.png" alt="logo-pay" class="logo-pay">
+							<button type="button" class="btn btn--alert" id="next-button-step-first">Next</button>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+
+
+
+			<div class="modal-content modal-content-step-third" id="modal-content-step-third">
+
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+
+				<div class="modal-body">
+						<div class="steps mt-3 mb-3">
+								<span class="dot-non-active"></span>
+								<span class="dot-non-active"></span>
+								<span class="dot-active"></span>
+							</div>
+					<div class="modal-body-inner">
+
+						<div class="modal-body-content">
+							<span class="heading">Выберите валюту:</span>
+							<div class="accordion-wrapper">
+								<button class="accordion">Accordion</button>
+								<div class="panel flex">
+									<div class="option" data-value="option-1">option-1</div>
+									<div class="option" data-value="option-2">option-2</div>
+									<div class="option" data-value="option-3">option-3</div>
+									<div class="option" data-value="option-4">option-4</div>
+								</div>
+							</div>
+							<label for="amount" class="heading">Amount:</label> <br />
+							<input type="text" id="amount" name="amount" placeholder="Enter amount"><br />
+							<label for="addres" class="heading">Addres:</label><br />
+							<input type="text" id="addres" name="addres" placeholder="Enter your wallet addres"><br />
+							<label for="tag" class="heading">TAG: </label><br />
+							<input type="text" id="tag" name="tag" placeholder="Enter TAG">
+
+						</div>
+
+						<div class="modal-footer">
+								<img src="./logo_pay.png" alt="logo-pay" class="logo-pay">
+							<button type="button" class="btn btn--alert" id="next-button-step-first">Next</button>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+
+
+
+
+		</div>
+	</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+	</script>
+	<script src="js/index.js"></script>
+	<script src="js/accordion.js"></script>
 </body>
+
 </html>
