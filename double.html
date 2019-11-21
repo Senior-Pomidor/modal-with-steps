@@ -34,11 +34,16 @@
 				</div>
 
 				<div class="modal-body">
+						<div class="steps mt-3 mb-3">
+								<span class="dot-active"></span>
+								<span class="dot-non-active"></span>
+								<span class="dot-non-active"></span>
+							</div>
 					<div class="modal-body-inner">
 
 						<div class="modal-body-content">
+							<h5 class="accordion-title">Способ оплаты</h5>
 							<div class="accordion-wrapper">
-								<h5 class="accordion-title">Способ оплаты</h5>
 								<button class="accordion">Accordion</button>
 								<div class="panel flex">
 									<div class="option" data-value="option-1">option-1</div>
@@ -50,6 +55,7 @@
 						</div>
 
 						<div class="modal-footer">
+								<img src="./logo_pay.png" alt="logo-pay" class="logo-pay">
 							<button type="button" class="btn btn--alert" id="next-button-step-first">Next</button>
 						</div>
 
@@ -61,46 +67,95 @@
 
 
 
+			<div class="modal-content modal-content-step-second" id="modal-content-step-second">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+
+				<div class="modal-body">
+						<div class="steps mt-3 mb-3">
+								<span class="dot-non-active"></span>
+								<span class="dot-active"></span>
+								<span class="dot-non-active"></span>
+							</div>
+					<div class="modal-body-inner">
+							<div class="bottom-header">
+								<span>Alala 300$ lorem</span>
+								<span>Amount 500$</span>
+							</div>
+						<div class="modal-body-content">
+
+							<span class="heading">Amount:</span> <br/>
+							2.02265116ETH<br/>
+							<span class="heading">Addres ETH:</span><br/>
+							<span class="pay-address">5019929ds24x84xg4xbsb626</span><button class="btn-copy btn--alert">copy</button><br/>
+							<span class="heading">TAG:</span> <br/>
+							<label for="txid" class="heading">TXID: </label><br/>
+							<input type="text" id="txid" name="txid" placeholder="Enter TXID transaction">
+
+						</div>
+
+						<div class="modal-footer">
+							<img src="./logo_pay.png" alt="logo-pay" class="logo-pay">
+							<button type="button" class="btn btn--alert" id="next-button-step-first">Next</button>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+
+
+
 			<div class="modal-content modal-content-step-third" id="modal-content-step-third">
 
-					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-	
-					<div class="modal-body">
-						<div class="modal-body-inner">
-	
-							<div class="modal-body-content">
-								<span class="heading">Выберите валюту:</span>
-								<div class="accordion-wrapper --third">
-									<button class="accordion">Accordion</button>
-									<div class="panel flex">
-										<div class="option" data-value="option-1">option-1</div>
-										<div class="option" data-value="option-2">option-2</div>
-										<div class="option" data-value="option-3">option-3</div>
-										<div class="option" data-value="option-4">option-4</div>
-									</div>
-								</div>
-										<label  for="amount" class="heading">Amount:</label> <br/>
-										<input type="text" id="amount" name="amount" placeholder="Enter amount"><br/>
-										<label for="addres" class="heading">Addres:</label><br/>
-										<input type="text" id="addres" name="addres" placeholder="Enter your wallet addres"><br/>
-										<label for="tag" class="heading">TAG: </label><br/>
-										<input type="text" id="tag" name="tag" placeholder="Enter TAG">
-				
-							</div>
-	
-							<div class="modal-footer">
-								<button type="button" class="btn btn--alert" id="next-button-step-first">Next</button>
-							</div>
-	
-						</div>
-					</div>
-	
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
 				</div>
+
+				<div class="modal-body">
+						<div class="steps mt-3 mb-3">
+								<span class="dot-non-active"></span>
+								<span class="dot-non-active"></span>
+								<span class="dot-active"></span>
+							</div>
+					<div class="modal-body-inner">
+
+						<div class="modal-body-content">
+							<span class="heading">Выберите валюту:</span>
+							<div class="accordion-wrapper">
+								<button class="accordion">Accordion</button>
+								<div class="panel flex">
+									<div class="option" data-value="option-1">option-1</div>
+									<div class="option" data-value="option-2">option-2</div>
+									<div class="option" data-value="option-3">option-3</div>
+									<div class="option" data-value="option-4">option-4</div>
+								</div>
+							</div>
+							<label for="amount" class="heading">Amount:</label> <br />
+							<input type="text" id="amount" name="amount" placeholder="Enter amount"><br />
+							<label for="addres" class="heading">Addres:</label><br />
+							<input type="text" id="addres" name="addres" placeholder="Enter your wallet addres"><br />
+							<label for="tag" class="heading">TAG: </label><br />
+							<input type="text" id="tag" name="tag" placeholder="Enter TAG">
+
+						</div>
+
+						<div class="modal-footer">
+								<img src="./logo_pay.png" alt="logo-pay" class="logo-pay">
+							<button type="button" class="btn btn--alert" id="next-button-step-first">Next</button>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
 
 
 
