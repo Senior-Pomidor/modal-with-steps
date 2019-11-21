@@ -37,13 +37,13 @@
     display: none;
     flex-direction: column;
     overflow: hidden;
-    width: 90%;
+    width: 110%;
     margin-top: 5px;
     font-size: 15px;
     color: #444;
     text-align: left;
-    background-color: #eee;
-    padding: 10px;
+    background-color: #fff;
+    padding: 0 50px;
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
